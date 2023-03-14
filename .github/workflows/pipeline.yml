@@ -34,7 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
+      - name: Change Automation Trigger
+        uses: ./
+        
   deployToDev:
     # Dependent on the Build Stage
     needs: build
