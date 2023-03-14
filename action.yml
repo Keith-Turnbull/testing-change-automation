@@ -1,0 +1,13 @@
+name: 'Change Automation Trigger'
+description: 'Allows for interaction with the Change Automation service'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  crq: # id of output
+    description: 'The crq that was created, for build complete action'
+runs:
+  using: 'node16'
+  main: 'index.js'
