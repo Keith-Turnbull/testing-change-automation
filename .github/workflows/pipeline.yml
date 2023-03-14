@@ -34,6 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Environment Variables
+        run: env
+        
       - name: Change Automation Trigger
         uses: ./
         
