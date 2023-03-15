@@ -9780,14 +9780,17 @@ const github = __nccwpck_require__(6037);
 try {
   const endpoint_url  = 'https://intr-p-iapi/changeautomation/api/FullYaml';
 
+  const callingApplication = "ghecloud";
+  const team_project = "";
+
   const build_id = github.context.runId;
   const repo_url = github.context.payload.repository.url;
 
   //console.log("The 'build id' is: " + build_id);
   core.warning(`The 'build id' is : ${build_id}`);
   core.info(`The repo URL is ${repo_url}`);
-  //const payload = JSON.stringify(github.context.payload, undefined, 2)
-  //console.log(`The event payload: ${payload}`);
+  const payload = JSON.stringify(github.context, undefined, 3)
+  console.log(`The context: ${payload}`);
   
 } catch (error) {
   core.setFailed(error.message);
