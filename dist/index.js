@@ -9787,7 +9787,7 @@ try {
   console.log(`The 'build id' is:${build_id}`);
   core.info(`The repository url is ${repo_url}`)
   
-  const payload = JSON.stringify(github.context, undefined, 2)
+  //const payload = JSON.stringify($github.context.payload, undefined, 2)
   //console.log(`The event payload: ${payload}`);
   
 } catch (error) {
