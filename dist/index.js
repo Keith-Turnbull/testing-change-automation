@@ -9781,10 +9781,12 @@ try {
   const endpoint_url  = 'https://intr-p-iapi/changeautomation/api/FullYaml';
 
   const build_id = github.context.runId;
+  const repo_url = github.context.payload.repository.url;
 
-  console.log("The 'build id' is: " + build_id);
-  
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
+  //console.log("The 'build id' is: " + build_id);
+  core.warning(`The 'build id' is : ${build_id}`);
+  core.info(`The repo URL is ${repo_url}`);
+  //const payload = JSON.stringify(github.context.payload, undefined, 2)
   //console.log(`The event payload: ${payload}`);
   
 } catch (error) {
