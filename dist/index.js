@@ -9780,14 +9780,11 @@ const github = __nccwpck_require__(6037);
 try {
   const endpoint_url  = 'https://intr-p-iapi/changeautomation/api/FullYaml';
 
-  const build_id = $github.context.runId;
-  const repo_url = $github.context.payload.repository.url;
+  const build_id = github.context.runId;
 
-
-  console.log(`The 'build id' is:${build_id}`);
-  core.info(`The repository url is ${repo_url}`)
+  console.log("The 'build id' is: " + build_id);
   
-  //const payload = JSON.stringify($github.context.payload, undefined, 2)
+  const payload = JSON.stringify(github.context.payload, undefined, 2)
   //console.log(`The event payload: ${payload}`);
   
 } catch (error) {
