@@ -9781,16 +9781,20 @@ try {
   const endpoint_url  = 'https://intr-p-iapi/changeautomation/api/FullYaml';
 
   const callingApplication = "ghecloud";
-  const team_project = "";
+  const team_project = github.context.payload.repository.full_name;
 
   const build_id = github.context.runId;
   const repo_url = github.context.payload.repository.url;
 
+  core.info(`Endpoint URL        : ${endpoint_url}`);
+  core.info(`Build Id            : ${build_id}`);
+  core.info(`Repo URL            : ${repo_url}`);
+  core.info(`Team Project        : ${team_project}`);
+  core.info(`Calling Application : ${calling_application}`);
+  
   //console.log("The 'build id' is: " + build_id);
-  core.warning(`The 'build id' is : ${build_id}`);
-  core.info(`The repo URL is ${repo_url}`);
-  const payload = JSON.stringify(github.context, undefined, 3)
-  console.log(`The context: ${payload}`);
+  //const payload = JSON.stringify(github.context, undefined, 3)
+  //console.log(`The context: ${payload}`);
   
 } catch (error) {
   core.setFailed(error.message);
