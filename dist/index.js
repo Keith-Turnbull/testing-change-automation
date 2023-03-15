@@ -9780,7 +9780,7 @@ const github = __nccwpck_require__(6037);
 try {
   const endpoint_url  = 'https://intr-p-iapi/changeautomation/api/FullYaml';
 
-  const callingApplication = "ghecloud";
+  const calling_application = "ghecloud";
   const team_project = github.context.payload.repository.full_name;
 
   const build_id = github.context.runId;
