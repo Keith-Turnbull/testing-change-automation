@@ -1,6 +1,6 @@
 # Change Automation Trigger action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This Action calls the Progressive Change Automation System to perform some automation tasks.
 
 ## Inputs
 
