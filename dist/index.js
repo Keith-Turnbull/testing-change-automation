@@ -16269,8 +16269,9 @@ const github = __nccwpck_require__(6037);
 const axios = (__nccwpck_require__(6889)["default"]);
 
 try {
-  const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/change-automation-trigger';
-
+  //const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/change-automation-trigger';
+  const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/echo?message=Hello the system';
+  
   const calling_application = "ghecloud";
   const team_project = github.context.payload.repository.full_name;
 
