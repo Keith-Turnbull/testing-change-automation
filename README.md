@@ -4,6 +4,14 @@ This Action calls the Progressive Change Automation System to perform some autom
 
 ## Inputs
 
+### Step to us
+**Required**
+Valid Values
+- Build
+- QASignOff
+- Release
+
+
 ### `who-to-greet`
 
 **Required** The name of the person to greet. Default `"World"`.
