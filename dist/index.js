@@ -16269,8 +16269,8 @@ const github = __nccwpck_require__(6037);
 const axios = (__nccwpck_require__(6889)["default"]);
 
 try {
-  //const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/change-automation-trigger';
-  const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/echo?message=Hello the system';
+  const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/change-automation-trigger';
+//const endpoint_url  = 'https://prd01-appfunc01-autocrq.azurewebsites.net/api/echo?message=Hello the system';
   
   const calling_application = "ghecloud";
   const team_project = github.context.payload.repository.full_name;
@@ -16279,8 +16279,8 @@ try {
   const repo_url = github.context.payload.repository.url;
 
   const stage_type = "build";
-  const stage_state = "comlete";
-  const stage_result = "success";
+  const stage_state = "completed";
+  const stage_result = "successful";
   const close_crq = false;
   const is_production = false;
   const servers = "aws-lambda";
