@@ -11,6 +11,9 @@ Valid Values
 - QASignOff
 - Release
 
+### Step Status
+**Required**
+Should always be 'Succeeded'
 
 ### `who-to-greet`
 
