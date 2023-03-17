@@ -1,0 +1,11 @@
+--- # Change Automation Configuration
+templateId : "A AutoCRQ for Enterprise Development Systems DEBUG"
+productName : "Application.Enterprise Development Systems.Technical Application.ProTools Utilities"
+branchFilter : [main,feature/*]
+pciApp : false
+soxApp : false
+usePullRequestTitleForReason : false
+projectName : "[Your Project Name Here]"
+correlateCRQs : false
+deployType : "auto"
+testResultsApp : "Link"
