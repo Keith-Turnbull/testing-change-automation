@@ -4,9 +4,9 @@ This Action calls the Progressive Change Automation System to perform some autom
 
 ## Inputs
 
-### `who-to-greet`
+### `stage`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The name of the stage to run change automation against.
 
 ## Outputs
 
