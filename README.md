@@ -6,7 +6,7 @@ This Action calls the Progressive Change Automation System to perform some autom
 
 ### `stage`
 
-**Required** The name of the person to stage.
+**Required** The name of the stage to activate against.
 
 ## Outputs
 
