@@ -37,8 +37,7 @@ jobs:
       - name: Environment Variables
         run: env
         
-      - name: Change Automation Trigger
-        uses: ./
+     
         
   deployToDev:
     # Dependent on the Build Stage
